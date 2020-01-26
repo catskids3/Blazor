@@ -1,5 +1,82 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<h1>Basic Calculator Demo Using Blazor</h1>
+<h4>Ported to .NET Core 3.1 from 'ASP.NET Core-Getting Started With Blazor' by Ankit Sharma, March 31, 2018</h4>
+<hr/>
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>First Number</p>
+        </div>
+        <div class="col-sm-4">
+            <input placeholder="Enter First Number" @bind="num1" />
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Second Number</p>
+        </div>
+        <div class="col-sm-4">
+            <input placeholder="Enter Second Number" @bind="num2" />
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Result</p>
+        </div>
+        <div class="col-sm-4">
+            <input readonly @bind="finalResult" />
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-2">
+            <button @onclick="AddNumbers" class="btn btn-success">Add (+)</button>
+        </div>
+        <div class="col-sm-2">
+            <button @onclick="SubtractNumbers" class="btn btn-warning">Subtract (+)</button>
+        </div>
+        <div class="col-sm-2">
+            <button @onclick="MultiplyNumbers" class="btn btn-info">Multiply (X)</button>
+        </div>
+        <div class="col-sm-2">
+            <button @onclick="DivideNumbers" class="btn btn-danger">Divide (/)</button>
+        </div>        
+    </div>
 
-Welcome to your new app.
+</div>
+
+@code {
+    string num1;
+    string num2;
+    string finalResult;
+
+    void AddNumbers()
+    {
+        finalResult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
+    }
+
+    void SubtractNumbers()
+    {
+        finalResult = (Convert.ToDouble(num1) - Convert.ToDouble(num2)).ToString();
+    }
+
+    void MultiplyNumbers()
+    {
+        finalResult = (Convert.ToDouble(num1) * Convert.ToDouble(num2)).ToString();
+    }
+
+    void DivideNumbers()
+    {
+        if(Convert.ToDouble(num2) != 0)
+        {
+            finalResult = (Convert.ToDouble(num1) / Convert.ToDouble(num2)).ToString();            
+        }
+        else
+        {
+            finalResult = "Cannot Divide by Zero";
+        }
+    }
+}
