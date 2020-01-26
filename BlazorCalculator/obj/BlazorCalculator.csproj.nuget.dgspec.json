@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\Blazor\\BlazorCalculator\\BlazorCalculator.csproj": {}
+    "D:\\github\\Blazor\\blazorcalculator\\BlazorCalculator.csproj": {}
   },
   "projects": {
-    "D:\\github\\Blazor\\BlazorCalculator\\BlazorCalculator.csproj": {
+    "D:\\github\\Blazor\\blazorcalculator\\BlazorCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\Blazor\\BlazorCalculator\\BlazorCalculator.csproj",
+        "projectUniqueName": "D:\\github\\Blazor\\blazorcalculator\\BlazorCalculator.csproj",
         "projectName": "BlazorCalculator",
-        "projectPath": "D:\\github\\Blazor\\BlazorCalculator\\BlazorCalculator.csproj",
+        "projectPath": "D:\\github\\Blazor\\blazorcalculator\\BlazorCalculator.csproj",
         "packagesPath": "C:\\Users\\catsk\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\Blazor\\BlazorCalculator\\obj\\",
+        "outputPath": "D:\\github\\Blazor\\blazorcalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
